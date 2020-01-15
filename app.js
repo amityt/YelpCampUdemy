@@ -15,7 +15,8 @@ var commentRoutes = require("./routes/comments");
 var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/yelp_camp",{
+var uri = "mongodb://localhost/yelp_camp";
+mongoose.connect(uri,{
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
